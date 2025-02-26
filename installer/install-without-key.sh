@@ -204,7 +204,7 @@ install_continue() {
 
 while :; do
   case $1 in
-  -s | --start) install_start && post_reboot && time_reboot "15" ;;
+  
   -c | --continue)
     #rm /root/install-without-key.sh &>/dev/null
     sed -i '/installer/d' /root/.bashrc
